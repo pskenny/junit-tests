@@ -15,16 +15,13 @@ public class FifthTestCase {
 
 	@BeforeClass
 	public static void beginning() {
-
 		System.out.println("*****Beginning******");
 		Assume.assumeTrue(checkLogin());
 		// will skip tests if returns false
-
 	}
 
 	@AfterClass
 	public static void ending() {
-
 		System.out.println("*****Ending******");
 	}
 
@@ -35,26 +32,19 @@ public class FifthTestCase {
 	}
 
 	@Test
-
 	public void sendingEmailTest() {
 		System.out.println("Testing Sending Email");
-
 	}
 
 	@Test
-
 	public void sendingMesageTest() {
 		System.out.println("Testing Sending Message");
-
 	}
 
 	// close Browser
 	@After
-
 	public void closeBrowser() {
-
 		// closing Browser Selenium
 		System.out.println("Close Browser");
 	}
-
 }
